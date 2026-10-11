@@ -5,7 +5,7 @@
 
 This research prototype uses a fine-tuned XLM-RoBERTa model to classify news articles in English, Hindi, and Gujarati.
 
-**Features**
+### Features
 
 * Multilingual fake-news classification.
 * Predicted label: FAKE or REAL.
@@ -13,7 +13,9 @@ This research prototype uses a fine-tuned XLM-RoBERTa model to classify news art
 * Model confidence display.
 * Explicit limitations and evidence-status information.
 
-**Important:** Predictions are model estimates, not proof of factual accuracy. The system may make mistakes and does not independently verify news claims.
+### Important Limitations
+
+Predictions are model estimates, not proof of factual accuracy. The model can make mistakes and does not independently verify news claims. The live demo uses a temporary Gradio link hosted through Google Colab, so it is available only while the application is running and the runtime remains connected.
 
 ## Overview
 
