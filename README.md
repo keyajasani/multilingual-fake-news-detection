@@ -1,4 +1,19 @@
 # Multilingual Fake News Detection Using XLM-RoBERTa
+## 🚀 Live Demo
+
+**Try the application:** [Multilingual Fake News Detection](https://06b393d8240c46f735.gradio.live/)
+
+This research prototype uses a fine-tuned XLM-RoBERTa model to classify news articles in English, Hindi, and Gujarati.
+
+**Features**
+
+* Multilingual fake-news classification.
+* Predicted label: FAKE or REAL.
+* Class probability estimates.
+* Model confidence display.
+* Explicit limitations and evidence-status information.
+
+**Important:** Predictions are model estimates, not proof of factual accuracy. The system may make mistakes and does not independently verify news claims.
 
 ## Overview
 
