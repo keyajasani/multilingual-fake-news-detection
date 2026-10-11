@@ -99,15 +99,32 @@ therefore be treated as exploratory and requires human verification.
 
 ## Repository Structure
 
-```text
-.
-├── app.py
+multilingual-fake-news-detection/
 ├── README.md
+├── app.py
 ├── requirements.txt
 ├── .gitignore
 ├── reports/
+│   ├── final_evaluation_report.txt
+│   ├── test_metrics.txt
+│   ├── training_log.json
+│   └── technical_handoff.txt
 ├── results/
+│   ├── confidence_calibration.csv
+│   ├── corrected_confidence_calibration.csv
+│   ├── language_class_performance.csv
+│   └── language_wise_test_results.csv
 ├── explainability/
+│   ├── shap_hindi_example.csv
+│   └── shap_hindi_logodds_example.csv
 ├── evidence_retrieval/
+│   ├── evidence_query_plan_v2.csv
+│   ├── evidence_retrieval_baseline.csv
+│   ├── semantic_evidence_candidates.csv
+│   ├── snopes_evidence_candidates.csv
+│   ├── snopes_rss_items.csv
+│   ├── wikipedia_evidence_sample.csv
+│   └── wikipedia_evidence_improved_sample.csv
 └── figures/
-```
+    ├── confusion_matrix.png
+    └── shap_hindi_distribution.png
