@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Model weights and checkpoints
+checkpoints/
+xlm_roberta_fake_news/
+*.safetensors
+pytorch_model.bin
+optimizer.pt
+scheduler.pt
+training_args.bin
+
+# Large datasets
+train.csv
+test.csv
+validation.csv
+multilingual_fake_news_clean.csv
+test_predictions.csv
+test_predictions_with_probabilities.csv
+test_predictions_with_corrected_probabilities.csv
+
+# Temporary files
+.ipynb_checkpoints/
+*.log
+.DS_Store

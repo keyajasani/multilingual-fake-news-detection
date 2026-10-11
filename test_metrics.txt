@@ -1,0 +1,6 @@
+XLM-RoBERTa Test Evaluation
+Test samples: 14473
+Accuracy: 0.995302
+Precision (REAL positive): 0.994566
+Recall (REAL positive): 0.997565
+F1-score (REAL positive): 0.996063

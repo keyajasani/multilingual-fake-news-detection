@@ -1,0 +1,77 @@
+TECHNICAL HANDOFF: MULTILINGUAL FAKE-NEWS DETECTION
+===================================================
+
+MODEL
+-----
+XLM-RoBERTa-base, fine-tuned for binary FAKE/REAL classification.
+Training time: approximately 66.32 minutes.
+Training and saved model files are available in the research folder.
+
+DATASET
+-------
+Total dataset: 144,711 articles.
+English: 62,702.
+Hindi: 67,177.
+Gujarati: 14,832.
+
+Train: 115,767.
+Validation: 14,471.
+Test: 14,473.
+
+SAVED-PREDICTION EVALUATION
+---------------------------
+Accuracy: 99.53%.
+Macro F1-score: 99.51%.
+Weighted F1-score: 99.53%.
+
+FAKE: Precision 0.9964, Recall 0.9920, F1 0.9942.
+REAL: Precision 0.9946, Recall 0.9976, F1 0.9961.
+
+Language-wise accuracy:
+English: 99.3143%.
+Gujarati: 99.7305%.
+Hindi: 99.6874%.
+
+These metrics describe the original saved predictions. They
+must be treated as provisional until the discrepancy between
+saved labels, probabilities, and independent inference is
+resolved.
+
+EXPLAINABILITY
+--------------
+SHAP output CSV and plot exist.
+The current explanation values are extremely small and need
+further validation before making strong interpretability claims.
+
+CONFIDENCE
+----------
+Confidence calibration file exists.
+Most examples fall in the 0.9-1.0 confidence bin.
+Calibration is preliminary because of the unresolved
+prediction/probability inconsistency.
+
+TRUSTED-SOURCE RETRIEVAL
+------------------------
+A preliminary Wikipedia retrieval prototype exists.
+Retrieval is not equivalent to fact verification. The current
+prototype does not establish the truth of news claims.
+
+IMPORTANT LIMITATIONS
+---------------------
+1. Resolve the saved-label/probability mismatch.
+2. Reproduce final metrics from one consistent inference run.
+3. Validate SHAP explanations before strong claims.
+4. Improve and evaluate trusted-source verification.
+5. Do not describe the retrieval prototype as a completed
+   fact-checking system.
+
+FILES
+-----
+final_evaluation_report.txt
+test_predictions.csv
+test_predictions_with_probabilities.csv
+confidence_calibration.csv
+shap_hindi_example.csv
+shap_hindi_distribution.png
+wikipedia_evidence_sample.csv
+wikipedia_evidence_improved_sample.csv

@@ -1,0 +1,50 @@
+MULTILINGUAL FAKE NEWS DETECTION
+FINAL SAVED-PREDICTION EVALUATION
+=================================
+
+Model: XLM-RoBERTa
+Task: Binary fake-news classification
+Classes: FAKE, REAL
+Test samples: 14,473
+
+OVERALL RESULTS
+---------------
+Accuracy: 99.53%
+
+Class       Precision   Recall    F1-score   Support
+FAKE        0.9964      0.9920    0.9942     5,850
+REAL        0.9946      0.9976    0.9961     8,623
+
+Macro F1-score: 99.51%
+Weighted F1-score: 99.53%
+
+CONFUSION MATRIX
+----------------
+                 Predicted FAKE   Predicted REAL
+Actual FAKE          5,803              47
+Actual REAL              21           8,602
+
+LANGUAGE-WISE RESULTS
+---------------------
+English: 6,228 / 6,271 correct (99.3143%)
+Gujarati: 1,480 / 1,484 correct (99.7305%)
+Hindi: 6,697 / 6,718 correct (99.6874%)
+
+IMPORTANT VALIDATION LIMITATION
+-------------------------------
+The saved prediction labels are internally consistent across
+the two prediction files. However, 147 of 14,473 saved labels
+disagree with the labels derived from their probability scores.
+
+A separate inference run also produced different predictions.
+Therefore, the reported classification metrics describe the
+original saved labels and must not be treated as independently
+reproduced until the prediction/probability discrepancy is
+resolved.
+
+TRUSTED-SOURCE LIMITATION
+-------------------------
+A preliminary Wikipedia retrieval prototype was created.
+Retrieving a matching page does not establish whether a claim
+is true. Trusted-source verification is not yet a completed
+fact-checking system.

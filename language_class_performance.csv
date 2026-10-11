@@ -1,0 +1,7 @@
+Language,Class,Articles,Precision (%),Recall (%),F1-score (%)
+English,FAKE,2809,99.46,99.0,99.23
+English,REAL,3462,99.19,99.57,99.38
+Gujarati,FAKE,869,99.88,99.65,99.77
+Gujarati,REAL,615,99.51,99.84,99.68
+Hindi,FAKE,2172,99.77,99.26,99.52
+Hindi,REAL,4546,99.65,99.89,99.77
